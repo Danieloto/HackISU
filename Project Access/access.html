@@ -1,0 +1,113 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta name="keywords" content="AccessPlus, Aplus, A+, Access, Plus, Iowa State University, Iowa, State, University, ISU" />
+<meta http-equiv="Pragma" content="no-cache" />
+<title>AccessPlus Login</title>
+
+<link rel="stylesheet" href="https://accessplus.iastate.edu/accessplus/css/accessplus.css" type="text/css" />
+</head>
+
+<body background="/images/env.gif">
+<!--Skip for Frame-->
+<map name="head" id="head">
+  <area shape="rect" coords="216,82,252,100" href="/frontdoor/about.jsp" alt="About AccessPlus" />
+  <area shape="rect" coords="262,82,295,100" href="/frontdoor/demo.jsp" alt="AccessPlus Demo" />
+  <area shape="rect" coords="306,82,329,100" href="/frontdoor/faq.jsp" alt="AccessPlus FAQ" />
+  <!--area shape="rect" coords="340,82,383,100" href="mailto:webmaster@www.accessplus.iastate.edu" alt="Contact AccessPlus Webmaster" /-->
+  <area shape="rect" coords="340,82,383,100" href="javascript:openHelpWindow('/frontdoor/emailform.jsp?jspName=login.jsp','430','615');" alt="Contact AccessPlus Webmaster" />
+</map>
+
+<table width="100%" border="0" cellspacing="6" cellpadding="0">
+  <tr valign="top">
+    <td align="right"><a href="http://www.iastate.edu/"><img src="https://accessplus.iastate.edu/accessplus/img/isu.333.gif" width="147" height="11" border="0" alt="Iowa State University" /></a></td>
+  </tr>
+</table>
+<!--End Skip for Frame-->
+
+<form method="post" name="login" action="/servlet/adp.A_Plus">
+<input type="hidden" name="A_Plus_action" value="/servlet/frontdoorv5.LoginServlet">
+<input type="hidden" name="pin" value="">
+<input type="hidden" name="ssn" value="">
+<!--<input type="hidden" name="LoginMethod" value="SOC SEC # " />-->
+<input type="hidden" name="LoginMethod" value="UNIV ID   " />
+
+
+
+
+<!--<input type="hidden" name="ssn" value="" />-->
+<table border="0" cellspacing="0" cellpadding="3" align="center">
+<!--Skip for Frame-->
+  <tr>
+    <td colspan="2"><img src="https://accessplus.iastate.edu/accessplus/img/spacer.gif" width="600" height="60" border="0" alt="" /><br /><img src="https://accessplus.iastate.edu/accessplus/img/login.head.gif" usemap="#head" width="600" height="100" border="0" alt="Welcome to AccessPlus" /><br /><img src="https://accessplus.iastate.edu/accessplus/img/spacer.gif" width="600" height="18" border="0" alt="" /></td>
+  </tr>
+<!--End Skip for Frame-->
+  <tr>
+<!--    <td align="right"><label for="loginmethod"><strong>Login Method:</strong></label></td>  -->
+<!--    <td align="right"><strong>Login Method:</strong></td>
+    <td>  -->
+    <td align="right" style="padding-bottom:8px; vertical-align:bottom;"><strong>Login Method:</strong></td>
+    <td>
+<select name="LMethod" id="loginmethod" tabindex="1" onchange="checkMethod();">
+  <option value="uid" checked >University ID</option>
+  <option value="ssn">Social Security</option>
+  <option value="tpa">Third Party Access</option>
+  <option value="cfr">Confirmation Number</option>
+</select>
+	<!--Skip for Frame-->
+<a href="/frontdoor/faq.jsp#id" tabindex="5"><span class="xxs">Login Method?</span></a>
+<!--End Skip for Frame-->
+    </td>
+<!--
+    <td>
+<input type="radio" name="LMethod" id="LMethodSSN" value="ssn"  /><label for="LMethodSSN">Social Security</label><br />
+<input type="radio" name="LMethod" id="LMethodUID" value="uid"  checked  /><label for="LMethodUID">University ID</label><br />
+<input type="radio" name="LMethod" id="LMethodTPA" value="tpa"  /><label for="LMethodTPA">Third Party Access</label>
+    </td>
+-->
+  </tr>
+  <tr>
+<!--    <td align="right"><label for="loginid"><strong>Login ID:</strong></label></td> -->
+    <td align="right"><strong>Login ID:</strong></td>
+    <td><input type="password" name="dspl_ssn" id="loginid" size="10" maxlength="9" tabindex="2"/></td>
+  </tr>
+  <tr>
+<!--    <td align="right"><label for="pinpass"><strong>Password:</strong></label></td>  -->
+    <td align="right"><strong>Password:</strong></td>
+    <td><input type="password" name="dspl_pin" id="pinpass" size="9" maxlength="8" tabindex="3"/>
+
+	<!--Skip for Frame-->
+<a href="/frontdoor/forgotPassword0.jsp" tabindex="6"><span class="xxs">Forget your password?</span></a></td>
+<!--End Skip for Frame-->
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input type="submit" name="login" value="Login" tabindex="4" /></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td>
+  	<div id="capsLockWarning" style="background-color:#ffcccc;float:bottom;position:relative;top:10px;display:none;padding:3px;">
+	  <b>Caps Lock is on.</b>
+	</div>
+  </td>
+  </tr>
+
+</table>
+</form>
+
+<center>
+<table cellpadding="0" cellspacing="0" border="0" width="550">
+<tr><td width="100%" valign="top" class="PPDesTxt"><b>Are you using a browser that doesn't support JavaScript?</b></td></tr>
+
+<tr><td width="100%" valign="top" class="PPDesTxt">If your browser does not support JavaScript, you can upgrade to a supported browser. </td></tr>
+
+<tr><td width="100%" valign="top" class="PPDesTxt"><b>Have you disabled JavaScript?</b></td></tr>
+
+<tr><td width="100%" valign="top" class="PPDesTxt">If you have disabled JavaScript, you must re-enable JavaScript to use this site. </td></tr>
+</table>
+
+</body>
+</html>
