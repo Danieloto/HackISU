@@ -5,19 +5,6 @@
 
   "version": "1.0",
 
-  "content_scripts":
-  [
-    {
-      "matches":
-      [
-        "https://www.youtube.com/", "http://www.youtube.com/"
-      ],
-      "html":[],
-      "js": [],
-      "css": []
-    }
-  ],
-
   "browser_action":
   {
     "default_icon": "icon.png",
