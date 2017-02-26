@@ -11,7 +11,20 @@
     "default_popup": "access.html",
     "default_title": "Project Access"
   },
-    
+
+  "content_scripts":
+  [
+    {
+      "matches":
+      [ 
+        "https://accessplus.iastate.edu/servlet/adp.A_Plus?A_Plus_action=/R480/R480.jsp&SYSTEM=R480&SUBSYS=006&SYSCODE=CS&MenuOption=7"
+      ],
+
+      "js": ["content.js"]
+
+    }
+  ],
+
   "permissions":
   [
     "https://ajax.googleapis.com/",
