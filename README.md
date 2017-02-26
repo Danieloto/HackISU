@@ -1,3 +1,0 @@
-"# HackISU" 
-"# HackISU" 
-"# HackISU" 
