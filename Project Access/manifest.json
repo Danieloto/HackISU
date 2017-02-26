@@ -16,9 +16,5 @@
   [
     "https://ajax.googleapis.com/",
     "https://accessplus.iastate.edu/*"
-  ],
-
-  "background":
-  {
-  }
+  ]
 }
